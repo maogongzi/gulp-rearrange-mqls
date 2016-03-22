@@ -80,7 +80,9 @@ function rearrangeMQLs(options) {
       // combine mqls with strict order. e.g. max-width: 1199px
       // should goes before max-width: 960px
       for (var i=0; i<options.mqlOrder.length; i++) {
-        combinedRules.push(ruleMap[options.mqlOrder[i]]);
+        if (options.mqlOrder[i] in ruleMap) {
+          combinedRules.push(ruleMap[options.mqlOrder[i]]);
+        }
       }
 
       // output processed content
