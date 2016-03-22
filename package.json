@@ -14,7 +14,7 @@
     "email": "maverickpuss@gmail.com"
   },
   "main": "./index.js",
-  "devDependencies": {
+  "dependencies": {
     "gulp-util": "^3.0.7",
     "through2": "^2.0.1"
   },
